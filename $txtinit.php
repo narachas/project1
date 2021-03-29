@@ -1,0 +1,23 @@
+<?php 
+//ob_start();
+	$txtvis="";
+	$txtddd="";
+	$txtff="";
+	$txtwx="";
+	$txtcld1="";
+	$txtcld2="";
+	$txtcld3="";
+	$txtcld4="";
+	$txtn1="";
+	$txtn2="";
+	$txtn3="";
+	$txtn4="";
+	$txtclht1="";
+	$txtclht2="";
+	$txtclht3="";
+	$txtclht4="";
+	$txtnn="";
+	$txtttt="";
+	$txttdd="";
+	$txtqnh="";
+?>

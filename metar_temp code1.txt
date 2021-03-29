@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="350" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var x1 = 110;
+var y1 = 160;
+var length = 80;
+var angl = 135;
+var length = 150;
+var ll = 40;
+bang = ((angl+50)-90)*Math.PI/180;
+angle = (angl-90)*Math.PI/180;
+
+x2 = x1 + length * Math.cos(angle);
+y2 = y1 + length * Math.sin(angle);
+x3 = x2 + ll * Math.cos(bang);
+y3 = y2 + ll * Math.sin(bang);
+bang = ((angl+205)-90)*Math.PI/180;
+ll = ll+30;
+x4 = x3 + ll * Math.cos(bang);
+y4 = y3 + ll * Math.sin(bang);
+ctx.fillStyle = '#000';
+
+
+
+
+ctx.moveTo(20, 30);
+ctx.lineTo(100, 100);
+ctx.stroke();
+
+barb(120, 130, 50, 200,130);
+
+function barb(x2, y2, blen, bang,angl) {
+ctx.fillStyle = '#f00';
+ctx.beginPath();
+
+ll = blen;
+//x3 = x2+30;
+//y3 = y2+100;
+//x4= x2+100;
+//y4= y2+50;
+
+x3 = x2 + ll * Math.cos(bang);
+y3 = y2 + ll * Math.sin(bang);
+bang = ((angl+205)-90)*Math.PI/180;
+ll = ll+30;
+x4 = x3 + ll * Math.cos(bang);
+y4 = y3 + ll * Math.sin(bang)
+
+
+ctx.moveTo(x2, y2);
+ctx.lineTo(x3, y3);
+ctx.lineTo(x4, y4);
+ctx.strokeStyle = "red";
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
+
+}
+
+
+</script> 
+
+</body>
+</html>

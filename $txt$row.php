@@ -1,0 +1,48 @@
+<?php 
+//ob_start();
+If ($_SESSION['txtstn']=="Waltair") {
+	$txtvis=$row['vis'];
+	$txtddd=$row['ddd'];
+	$txtff=$row['ff'];
+	$txtwx=$row['wx'];
+	$txtcld1=$row['cld1'];
+	$txtcld2=$row['cld2'];
+	$txtcld3=$row['cld3'];
+	$txtcld4=$row['cld4'];
+	$txtn1=$row['n1'];
+	$txtn2=$row['n2'];
+	$txtn3=$row['n3'];
+	$txtn4=$row['n4']; 
+	$txtclht1=$row['clht1'];
+	$txtclht2=$row['clht2'];
+	$txtclht3=$row['clht3'];
+	$txtclht4=$row['clht4'];
+	$txtnn=$row['nn'];
+	$txtttt=$row['ttt']; 
+	$txttdd=$row['tdd'];
+	$txtqnh=$row['qnh'];
+}
+else
+{	
+	$txtvis=$row['visx'];
+	$txtddd=$row['dddx'];
+	$txtff=$row['ffx'];
+	$txtwx=$row['wxx'];
+	$txtcld1=$row['cldx1'];
+	$txtcld2=$row['cldx2'];
+	$txtcld3=$row['cldx3'];
+	$txtcld4=$row['cldx4'];
+	$txtn1=$row['nx1'];
+	$txtn2=$row['nx2'];
+	$txtn3=$row['nx3'];
+	$txtn4=$row['nx4']; 
+	$txtclht1=$row['clhtx1'];
+	$txtclht2=$row['clhtx2'];
+	$txtclht3=$row['clhtx3'];
+	$txtclht4=$row['clhtx4'];
+	$txtnn=$row['nnx'];
+	$txtttt=$row['tttx']; 
+	$txttdd=$row['tddx'];
+	$txtqnh=$row['qnhx'];
+}
+?>

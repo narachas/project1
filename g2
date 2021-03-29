@@ -1,0 +1,29 @@
+<?php 
+$im 	= ImageCreate(1750,850);  
+$white 	= ImageColorAllocate($im,0xFF,0xFF,0xFF);  
+$black 	= ImageColorAllocate($im,0x00,0x00,0x00);  
+$grey 	= ImageColorAllocate($im,0xdd,0xdd,0xDD); 
+$red   	= imagecolorallocate($im,255,0,0);
+$blu   	= imagecolorallocate($im,10,10,255);
+imageresolution($im, 2000);
+
+ImageFilledRectangle($im,50,50,1700,800,$grey);  
+//ImageFilledRectangle($im,150,50,400,400,$white);
+//imagearc($im, 275, 220, 30, 30,  0, 360, $red);
+// imagepolarline($im,275,220,100,225,$red);
+
+$x1 	= 0;
+$y1 	= 220;
+
+for ($nn = 1; $nn <= 1; $nn++)
+{
+$x1 = $x1+300
+$rcl = imagecolorallocate($im,$nn*40,$nn+20,$nn*10);
+ImageFilledRectangle($im,$x1-150,50,250,400,$rcl);
+
+}
+header('Content-Type: image/png');  
+ImagePNG($im);  
+imagedestroy($im);
+
+?>
